@@ -40,7 +40,7 @@ function appendStar(x, y, big) {
 
 function startCountdown() {
   var test_stamp = 1631664000000;
-  var friday_at_9am_jst = 1631923200000;
+  var friday_at_9am_jst = 1767210490000;
   var launch = countdown(friday_at_9am_jst,
     function(ts) {
       doCountdown(ts);
