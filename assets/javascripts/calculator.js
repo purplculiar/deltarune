@@ -45,7 +45,7 @@ function calculate() {
 		startCountdown();
 	}
 	else {
-		var chance = Math.floor((new Date() - new Date('2025-01-01')) / (1000 * 60 * 60 * 24));
+		var chance = 100 / (365 - (Math.floor((new Date() - new Date('2025-01-01')) / (1000 * 60 * 60 * 24))));
 		$('#chance').html(`${chance}%`);
 	}
 }
