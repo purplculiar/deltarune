@@ -1,6 +1,4 @@
-function getRandomInt(max) {
-  return Math.floor(Math.random() * max);
-}
+
 
 $(function() {
   // guaranteed stars
@@ -41,6 +39,9 @@ function appendStar(x, y, big) {
   $("#stars").append("<img src='/assets/images/star" + star + ".png' style='margin-left: " + x + "px; margin-top: " + y + "px; animation-delay: -" + delay + "s' />");
 }
 function swap() {
+	function getRandomInt(max) {
+	  return Math.floor(Math.random() * max);
+	}
 	let d = getRandomInt()
 	var onImg = "/assets/images/character-of-the-week.png";
 	var offImg = "/assets/images/character-of-the-week-dw.png";
