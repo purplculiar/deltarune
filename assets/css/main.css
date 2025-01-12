@@ -290,6 +290,8 @@ hr { border-width: 2px; }
 
 #countdown.shaky { animation: shaky 0.8s steps(1, end) infinite; }
 
+.aotw { animation: shaky 0.8s steps(1, end) infinite; }
+
 #countdown.shakier { font-size: 80px; animation: shaky 0.4s steps(1, end) infinite; }
 
 #countdown.shakiest { font-size: 90px; animation: shaky 0.2s steps(1, end) infinite; }
