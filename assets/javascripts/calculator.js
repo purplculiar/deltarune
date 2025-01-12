@@ -44,7 +44,7 @@ function calculate() {
 		$('#chance').html(`${chance}%`);
 	}
 	else {
-		var chance = 0
+		var chance = 0;
 		$('#chance').html(`${chance}% but thats cause its out in...`);
 		startCountdown();
 	}
@@ -58,8 +58,8 @@ function startCountdown() {
         doCountdown(ts);
       }
     );
+  }
 }
-
 function doCountdown(ts) {
   if (ts.end > ts.start) {
     $('#countdown').html("NOW!<br><small>(refresh!)</small>");
