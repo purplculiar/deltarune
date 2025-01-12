@@ -38,15 +38,15 @@ function appendStar(x, y, big) {
 }
 
 function calculate() {
-  var friday_at_9am_jst = null;
+  let friday_at_9am_jst = null;
 	if (friday_at_9am_jst) {
-		var chance = Math.floor((new Date() - new Date('2025-01-01')) / (1000 * 60 * 60 * 24));
-		$('#chance').html(`${chance}%`);
-	}
-	else {
 		var chance = 0;
 		$('#chance').html(`${chance}% but thats cause its out in...`);
 		startCountdown();
+	}
+	else {
+		var chance = Math.floor((new Date() - new Date('2025-01-01')) / (1000 * 60 * 60 * 24));
+		$('#chance').html(`${chance}%`);
 	}
 }
 
