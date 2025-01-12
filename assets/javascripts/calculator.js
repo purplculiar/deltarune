@@ -1,3 +1,7 @@
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
 $(function() {
   // guaranteed stars
   // right side
@@ -36,7 +40,18 @@ function appendStar(x, y, big) {
   var delay = Math.floor(Math.random() * 6) + 1;
   $("#stars").append("<img src='/assets/images/star" + star + ".png' style='margin-left: " + x + "px; margin-top: " + y + "px; animation-delay: -" + delay + "s' />");
 }
-
+function swap() {
+	let d = getRandomInt()
+	var onImg = "/assets/images/character-of-the-week.png";
+	var offImg = "/assets/images/character-of-the-week-dw.png";
+	var specilImg = "/assets/images/character-of-the-week-shhh.png";
+	if (d == 42) {
+		$('.aotw').src = $('.aotw').src == specilImg ? specilImg : specilImg;
+	}
+	else {
+		$('.aotw').src = $('.aotw').src == offImg ? onImg : offImg;
+	}
+}
 function calculate() {
   let friday_at_9am_jst = null;
 	if (friday_at_9am_jst) {
