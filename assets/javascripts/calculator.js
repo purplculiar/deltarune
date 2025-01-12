@@ -46,7 +46,8 @@ function calculate() {
 	}
 	else {
 		var chance = 100 / (365 - (Math.floor((new Date() - new Date('2025-01-01')) / (1000 * 60 * 60 * 24))));
-		$('#chance').html(`${chance}%`);
+		$('#chance').html(`${Math.round((chance + Number.EPSILON) * 100) / 100}% or`);
+		$('#accurate-chance').html(`${chance}% for the nerds`);
 	}
 }
 
