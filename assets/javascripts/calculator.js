@@ -65,7 +65,7 @@ function calculate() {
 		var millichance = 100 / (31556952000 - (Math.floor((new Date() - new Date('2025-01-01')))));
 		$('#chance').html(`${Math.round((chance + Number.EPSILON) * 100) / 100}% or`);
 		$('#accurate-chance').html(`${chance}% for the nerds`);
-		$('#milli-chance').html(`And for fun theres a ${milli-chance}% it releases at this very millisecond.`);
+		$('#milli-chance').html(`And for fun theres a ${millichance}% it releases at this very millisecond.`);
 		
 	}
 }
